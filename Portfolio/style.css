@@ -295,7 +295,7 @@ section .title::after{
     content: "Empresas";
 }
 .client .client-content .column{
-    width: calc(50% - 30px);
+    width: calc(20% - 10px);
 }
 
 .client .client-content .left .text{
@@ -651,11 +651,17 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .client .client-content .column,
+    
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
     }
+
+    .client .client-content .column{
+        width: 50%;
+        margin-bottom: 35px;
+    }
+
     footer{
         margin-top: 15px;
     }
