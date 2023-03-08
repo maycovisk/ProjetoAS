@@ -20,8 +20,8 @@
                 <li><a href="#home">Início</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#services">Serviços</a></li>
-                <li><a href="#skills">Clientes</a></li>
-                <li><a href="#teams">Equipe</a></li>
+                <li><a href="#client">Clientes</a></li>
+                <li><a href="#teams">Comentários</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
             <div class="menu-btn">
@@ -155,10 +155,10 @@
     </section>
 
     <!--Sessão Clientes-->
-    <section class="skills" id="skills">
+    <section class="client" id="client">
         <div class="max-width">
             <h2 class="title">Clientes</h2>
-            <div class="skills-content">
+            <div class="client-content">
                 <img src="img/imgClientes/imgC1.webp" alt="wizard">
                 <img src="img/imgClientes/imgC2.webp" alt="dokar">
                 <img src="img/imgClientes/imgC3.webp" alt="insight">
@@ -171,46 +171,40 @@
         </div>
     </section>
 
-    <!--Sessão Equipe-->
+    <!--Sessão Comentários-->
     <section class="teams" id="teams">
         <div class="max-width">
-            <h2 class="title">Minha Equipe</h2>
+            <h2 class="title">Comentários</h2>
             <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
-                        <img src="img/img-1 old.jpg" alt="">
-                        <div class="text">Fulano</div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis nihil vitae asperiores. Quae, nostrum corporis.</p>
+                        <img class="coment" src="img/imgComentarios/img1.webp" alt="Aline Campos">
+                        <div class="text">Aline Campos</div>
+                        <p>Proprietária Mili Laços & Flores</p>
+                        <br>
+                        <p class="comentario">"Me ajudou a resolver algumas pendências e está sempre disposto a tirar as minhas dúvidas. Atencioso e atendimento rápido!! Recomendo!!!"</p>
+                        <br><br>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="img/img-2.jpg" alt="">
-                        <div class="text">Ciclano</div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis nihil vitae asperiores. Quae, nostrum corporis.</p>
+                        <img class="coment" src="img/imgComentarios/img2.webp" alt="Fabio de Souza">
+                        <div class="text">Fabio de Souza Serrao</div>
+                        <p>Proprietário Exclusive Patners Group</p>
+                        <br>
+                        <p class="comentario">"Conheço muito bem o André e toda sua qualificação técnica, um ótimo profissional, muito ético e prático na resolução de assuntos. Recomendo os serviços da empresa dele com toda certeza."</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="img/img-3.jpg" alt="">
-                        <div class="text">Beltrana</div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis nihil vitae asperiores. Quae, nostrum corporis.</p>
+                        <img class="coment" src="img/imgComentarios/img3.webp" alt="">
+                        <div class="text">Daiane Figueira</div>
+                        <p>Advogada</p>
+                        <p class="comentario">"Ótimo profissional, atencioso, sempre disposto a ajudar e competente no que faz! Estou satisfeita com serviços prestados, me surpreendeu na qualidade e o mais importante facilitou minha a vida profissional. Recomendo!!"</p>
+                        <br>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="img/img-4.jpg" alt="">
-                        <div class="text">Ciclana</div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis nihil vitae asperiores. Quae, nostrum corporis.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="img/img-5.jpg" alt="">
-                        <div class="text">Fulana</div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis nihil vitae asperiores. Quae, nostrum corporis.</p>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -235,7 +229,7 @@
                         <ion-icon name="earth-outline"></ion-icon>
                         <div class="info">
                             <div class="head">Endereço</div>
-                            <div class="sub-title">Taubaté, SP</div>
+                            <div class="sub-title">Travessa 21 de Abril, 8, Centro - Tremembé - SP CEP 12120-101</div>
                         </div>
                     </div>
                     <div class="row">
@@ -263,25 +257,25 @@
                 </div>
                 <div class="column right">
                     <div class="text">Mensagem</div>
-                    <form action="#">
+                    <form action="https://formspree.io/f/mdovzrqe" method="POST">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Nome" required>
+                                <input type="text" placeholder="Nome" name="Nome" required>
                             </div>
                             
                             <div class="field mobile">
-                                <input type="tel" placeholder="Telefone" data-mask=" (00) 0000-0000" data-mask-selectonfocus="true" required>
+                                <input type="tel" placeholder="Telefone" name="Telefone" data-mask=" (00) 0000-0000" data-mask-selectonfocus="true" required>
                             </div>
                         </div>
                         <div class="field">
                             <div class="field">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" placeholder="Email" name="Email" required>
                             </div>
                             <div class="field">
-                                <input type="text" placeholder="Empresa" required>
+                                <input type="text" placeholder="Empresa" name="Empresa" required>
                             </div>
                             <div class="field textarea">
-                                <textarea cols="30" rows="10" placeholder="Escrever..."></textarea>
+                                <textarea cols="30" rows="10" placeholder="Escrever..." name="text"></textarea>
                             </div>
                             <div class="button">
                                 <button type="submit">Enviar</button>

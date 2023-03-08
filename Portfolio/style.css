@@ -187,12 +187,12 @@ section .title::after{
     padding: 5px;
     transform: translateX(-50%);
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .client, .teams, .contact, footer{
     font-family: var(--fonte-destaque);
 }
 .about .about-content,
 .services .serv-content,
-.skills .skills-content,
+.client .client-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -291,22 +291,22 @@ section .title::after{
 }
 
 /*..Sessão..clientes..*/
-.skills .title::after{
+.client .title::after{
     content: "Empresas";
 }
-.skills .skills-content .column{
+.client .client-content .column{
     width: calc(50% - 30px);
 }
 
-.skills .skills-content .left .text{
+.client .client-content .left .text{
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 10px;
 }
-.skills .skills-content .left p{
+.client .client-content .left p{
     text-align: justify;
 }
-.skills .skills-content .left a{
+.client .client-content .left a{
     display: inline-block;
     background: var(--cor0);
     color: var(--cor1);
@@ -318,29 +318,29 @@ section .title::after{
     border: 2px solid var(--cor0);
     transition: all 0.3s ease;
 }
-.skills .skills-content .left a:hover{
+.client .client-content .left a:hover{
     color: var(--cor0);
     background: none;
 }
-.skills .skills-content .right .bars{
+.client .client-content .right .bars{
     margin-bottom: 15px;
 }
-.skills .skills-content .right .bars .info{
+.client .client-content .right .bars .info{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.skills .skills-content .right span{
+.client .client-content .right span{
     font-weight: 500;
     font-size: 18px;
 }
-.skills .skills-content .right .line{
+.client .client-content .right .line{
     width: 100%;
     height: 5px;
     background: var(--cor4);
     position: relative;
 }
-.skills .skills-content .right .line::before{
+.client .client-content .right .line::before{
     content: "";
     position: absolute;
     height: 100%;
@@ -348,26 +348,26 @@ section .title::after{
     left: 0;
     background: var(--cor0);
 }
-.skills .skills-content .right .html::before{
+.client .client-content .right .html::before{
     width: 35%;
 }
-.skills .skills-content .right .css::before{
+.client .client-content .right .css::before{
     width: 30%;
 }
-.skills .skills-content .right .js::before{
+.client .client-content .right .js::before{
     width: 30%;
-}
-.skills .skills-content .right .ccpp::before{
+}client
+.client .client-content .right .ccpp::before{
     width: 70%;
 }
-.skills .skills-content .right .sql::before{
+.client .client-content .right .sql::before{
     width: 80%;
 }
-.skills .skills-content .right .py::before{
+.client .client-content .right .py::before{
     width: 50%;
 }
 
-.skills .skills-content img{
+.client .client-content img{
     width: calc(20% - 20px);
     text-align: center;
     border-radius: 6px;
@@ -375,13 +375,13 @@ section .title::after{
     transition: all 0.3s ease;
 }
 
-.skills .skills-content img:hover{
+.client .client-content img:hover{
     transform: scale(1.35);
 }
 
-/*..Sessão..Equipe..*/
+/*..Sessão..Comentários..*/
 .teams .title::after{
-    content: "Especializada";
+    content: "Clientes";
 }
 .teams .carousel .card{
     background: var(--cor3);
@@ -411,8 +411,10 @@ section .title::after{
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.teams .carousel .card:hover .box .coment{
     transform: scale(1.05);
+    -webkit-filter: none;
+    filter: none;
 }
 .teams .carousel .card .text{
     font-size: 25px;
@@ -439,6 +441,17 @@ section .title::after{
 .owl-dot:hover{
     background: var(--cor0)!important;
 }
+
+.teams .coment{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+
+.teams .card .comentario{
+    font-style: italic;
+}
+
 
 /*..Sessão..Contato..*/
 .contact .title::after{
@@ -638,7 +651,7 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column,
+    .client .client-content .column,
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
